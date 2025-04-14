@@ -2,6 +2,8 @@
 
 -Esta es una tienda online desarrollada como proyecto frontend utilizando **HTML, CSS, JavaScript y jQuery**, junto con la **API de Platzi Fake Store**.
 
+-Enlace en Producción: https://jairoc300.github.io/Tienda-on-line/
+
 -De los puntos extra he echo todos menos el último que consiste en "Haciendo uso de la librería emailjs.com haz que tu web envíe emails al usuario al finalizar pedido y al registrarse". 
 
 ## 🧩 Características
