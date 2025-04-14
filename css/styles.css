@@ -1,0 +1,202 @@
+/* Estilos css para la tienda online */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+  
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+header h1 {
+    margin-bottom: 0.5em;
+}
+  
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+  
+nav a,
+nav select {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+  
+nav select {
+    background-color: #444;
+    color: #fff;
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+}
+  
+/* Main */
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+  
+/* Producto */
+.producto {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+  
+.producto img {
+    width: 100px;
+    height: auto;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+  
+.producto div {
+    flex-grow: 1;
+}
+  
+.producto h3 {
+    margin-bottom: 0.5em;
+}
+  
+.producto p {
+    margin-bottom: 0.5em;
+    color: #666;
+}
+  
+.producto strong {
+    font-size: 1.1em;
+}
+  
+.producto button {
+    margin-top: 1em;
+    background-color: #28a745;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+  
+.producto button:hover {
+    background-color: #218838;
+}
+  
+/* Carrito */
+#carrito {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+  
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8em;
+}
+  
+.carrito-item input {
+    width: 60px;
+    padding: 0.3em;
+    text-align: center;
+}
+  
+.carrito-item button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.carrito-item button:hover {
+    background-color: #c82333;
+}
+  
+#carrito h3 {
+    margin-top: 1.5em;
+}
+  
+/* Mensaje */
+#mensaje {
+    border-radius: 5px;
+    font-weight: bold;
+}
+  
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+  
+/* Login y Registro */
+input[type="email"],
+input[type="text"],
+input[type="number"] {
+    padding: 0.5em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+  
+button#btn-submit-login,
+button#btn-submit-registro {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+  
+button#btn-submit-login:hover,
+button#btn-submit-registro:hover {
+    background-color: #0056b3;
+}
+  
+/* Resumen de compra */
+ul {
+    margin: 1em 0;
+}
+  
+ul li {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+}
+  
