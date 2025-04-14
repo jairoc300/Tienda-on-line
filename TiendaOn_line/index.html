@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Tienda Online</h1>
+    <nav>
+      <!-- Navegación principal -->
+      <a href="#" id="ver-productos">Productos</a>
+
+      <!-- Filtros -->
+      <select id="select-categorias">
+        <option value="">Todas las categorías</option>
+      </select>
+
+      <select id="orden-precio">
+        <option value="asc">Precio: menor a mayor</option>
+        <option value="desc">Precio: mayor a menor</option>
+      </select>
+
+      <!-- Carrito -->
+      <a href="#" id="ver-carrito">Carrito (<span id="cantidad-carrito">0</span>)</a>
+
+      <!-- Usuario -->
+      <span id="usuario-logueado" style="margin-left: 1em; color: white;"></span>
+      <a href="#" id="btn-login">Login</a>
+      <a href="#" id="btn-logout" style="display: none;">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <main id="vista-principal">
+    <!-- Productos, login, registro, etc.. -->
+    <div id="contenedor-productos"></div>
+    <div id="preload" style="display: none;">Cargando más productos...</div>
+    <div id="vista-secundaria"></div>
+    <div id="mensaje" style="display: none; padding: 1em; margin: 1em 0; text-align: center;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tienda Online - Jairo Alejandro Gálvez Rodríguez</p>
+  </footer>
+
+  <!-- Los archivos js -->
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
