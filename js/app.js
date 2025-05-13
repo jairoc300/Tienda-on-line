@@ -124,7 +124,7 @@ $(document).ready(function () {
 
           if (producto.images && producto.images.length > 0) {
             const url = producto.images[0];
-            if (typeof url === 'string' && url.startsWith('http') && !url.includes('i.imgur.com')) {
+            if (typeof url === 'string' && url.startsWith('http')) {
               imagenValida = url;
             }
           }
